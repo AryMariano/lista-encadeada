@@ -5,8 +5,7 @@ public class No<T> {
     private T conteudo;
     private No noRef;
 
-
-    public No(){
+    public No() {
 
     }
 
@@ -41,13 +40,12 @@ public class No<T> {
         return "No [conteudo=" + conteudo + "]";
     }
 
-    public String toStringEncadeado(){
-        String str =  "No [conteudo=" + conteudo + "]";
-        if(noRef != null){
-            str += "->" + noRef.toString(); 
-        }
-        else{
-            str+= "->null";
+    public String toStringEncadeado() {
+        String str = "No [conteudo=" + conteudo + "]";
+        if (noRef != null) {
+            str += "->" + noRef.toString();
+        } else {
+            str += "->null";
         }
         return str;
     }
