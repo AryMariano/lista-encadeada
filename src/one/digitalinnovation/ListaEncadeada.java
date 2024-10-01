@@ -92,7 +92,7 @@ public class ListaEncadeada<T> {
         String strRetorno = "";
         No<T> noAuxiliar = referenciaEntrada;
 
-        for(int i=0; i< this.size();i++){
+        for (int i = 0; i < this.size(); i++) {
 
             strRetorno = strRetorno + i + "°: " + noAuxiliar.getConteudo() + "\n";
             noAuxiliar = noAuxiliar.getNoRef();
@@ -101,8 +101,5 @@ public class ListaEncadeada<T> {
         strRetorno += "null";
         return strRetorno;
     }
-
-
-    
 
 }
